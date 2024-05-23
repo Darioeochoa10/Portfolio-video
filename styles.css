@@ -1,0 +1,27 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+#eclipse {
+  width: 100%;
+  height: 100%;
+}
+
+.moon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  animation: eclipseAnimation 5s linear infinite alternate;
+}
+
+@keyframes eclipseAnimation {
+  0%,
+  100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
